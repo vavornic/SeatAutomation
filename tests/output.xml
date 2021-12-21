@@ -1,58 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211221 14:11:38.320" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211221 15:34:28.153" rpa="false" schemaversion="2">
 <suite id="s1" name="Tasks" source="C:\Users\VAVORNIC\Desktop\Seat\SeatAutomation\tests\tasks.robot">
 <kw name="Open Browser" library="Selenium2Library" type="SETUP">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211221 14:11:38.945" level="INFO">Opening browser 'Chrome' to base url 'https://senseit-test.orange.md/'.</msg>
-<status status="PASS" starttime="20211221 14:11:38.945" endtime="20211221 14:11:44.152"/>
+<msg timestamp="20211221 15:34:28.748" level="INFO">Opening browser 'Chrome' to base url 'https://senseit-test.orange.md/'.</msg>
+<status status="PASS" starttime="20211221 15:34:28.747" endtime="20211221 15:34:33.148"/>
 </kw>
 <test id="s1-t1" name="Google Search">
 <kw name="loginKW">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <arg>Forgot Password?</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211221 14:11:44.160" endtime="20211221 14:11:44.464"/>
+<status status="PASS" starttime="20211221 15:34:33.154" endtime="20211221 15:34:33.457"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name=username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211221 14:11:44.464" level="INFO">Typing text 'vavornic' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20211221 14:11:44.464" endtime="20211221 14:11:44.616"/>
+<msg timestamp="20211221 15:34:33.459" level="INFO">Typing text 'vavornic' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20211221 15:34:33.457" endtime="20211221 15:34:33.602"/>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <arg>xpath=//*[@id="password"]/input</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211221 14:11:44.616" level="INFO">Typing password into text field 'xpath=//*[@id="password"]/input'.</msg>
-<msg timestamp="20211221 14:11:44.666" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211221 14:11:44.733" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211221 14:11:44.616" endtime="20211221 14:11:44.733"/>
+<msg timestamp="20211221 15:34:33.604" level="INFO">Typing password into text field 'xpath=//*[@id="password"]/input'.</msg>
+<msg timestamp="20211221 15:34:33.657" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211221 15:34:33.734" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211221 15:34:33.603" endtime="20211221 15:34:33.734"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>xpath=//*[@id="kc-login"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211221 14:11:44.741" level="INFO">Clicking button 'xpath=//*[@id="kc-login"]'.</msg>
-<status status="PASS" starttime="20211221 14:11:44.733" endtime="20211221 14:11:45.156"/>
+<msg timestamp="20211221 15:34:33.734" level="INFO">Clicking button 'xpath=//*[@id="kc-login"]'.</msg>
+<status status="PASS" starttime="20211221 15:34:33.734" endtime="20211221 15:34:34.112"/>
 </kw>
 <kw name="Execute Manual Step" library="Dialogs">
 <arg>Please write the code.</arg>
 <doc>Pauses test execution until user sets the keyword status.</doc>
-<status status="PASS" starttime="20211221 14:11:45.156" endtime="20211221 14:11:56.880"/>
+<status status="PASS" starttime="20211221 15:34:34.113" endtime="20211221 15:34:51.237"/>
 </kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//*[@id="root"]/div[1]/div/div/div/div/div/button[1]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211221 14:11:56.880" level="INFO">Clicking button 'xpath=//*[@id="root"]/div[1]/div/div/div/div/div/button[1]'.</msg>
-<status status="PASS" starttime="20211221 14:11:56.880" endtime="20211221 14:11:57.088"/>
+<status status="PASS" starttime="20211221 15:34:33.153" endtime="20211221 15:34:51.237"/>
 </kw>
-<status status="PASS" starttime="20211221 14:11:44.160" endtime="20211221 14:11:57.088"/>
+<kw name=" bookingWorkPlace">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div[1]/div[1]/div/main/div/div/div[2]/div[3]/div/div[2]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211221 15:34:51.249" level="INFO">Clicking element 'xpath=/html/body/div[1]/div[1]/div/main/div/div/div[2]/div[3]/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20211221 15:34:51.248" endtime="20211221 15:34:51.334"/>
 </kw>
-<status status="PASS" starttime="20211221 14:11:44.152" endtime="20211221 14:11:57.088"/>
+<status status="PASS" starttime="20211221 15:34:51.246" endtime="20211221 15:34:51.334"/>
+</kw>
+<status status="PASS" starttime="20211221 15:34:33.148" endtime="20211221 15:34:51.335"/>
 </test>
-<status status="PASS" starttime="20211221 14:11:38.330" endtime="20211221 14:11:57.096"/>
+<status status="PASS" starttime="20211221 15:34:28.153" endtime="20211221 15:34:51.338"/>
 </suite>
 <statistics>
 <total>
@@ -65,7 +68,7 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211221 14:11:38.849" level="ERROR">Error in file 'C:\Users\VAVORNIC\Desktop\Seat\SeatAutomation\tests\tasks.robot' on line 3: Importing library 'RPA.Browser.Selenium' failed: ModuleNotFoundError: No module named 'RPA'
+<msg timestamp="20211221 15:34:28.670" level="ERROR">Error in file 'C:\Users\VAVORNIC\Desktop\Seat\SeatAutomation\tests\tasks.robot' on line 3: Importing library 'RPA.Browser.Selenium' failed: ModuleNotFoundError: No module named 'RPA'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -75,7 +78,7 @@ PYTHONPATH:
   c:\users\vavornic\appdata\local\programs\python\python38\lib
   c:\users\vavornic\appdata\local\programs\python\python38
   c:\users\vavornic\appdata\local\programs\python\python38\lib\site-packages</msg>
-<msg timestamp="20211221 14:11:38.857" level="ERROR">Error in file 'C:\Users\VAVORNIC\Desktop\Seat\SeatAutomation\tests\tasks.robot' on line 4: Importing library 'RPA.Desktop.Windows' failed: ModuleNotFoundError: No module named 'RPA'
+<msg timestamp="20211221 15:34:28.678" level="ERROR">Error in file 'C:\Users\VAVORNIC\Desktop\Seat\SeatAutomation\tests\tasks.robot' on line 4: Importing library 'RPA.Desktop.Windows' failed: ModuleNotFoundError: No module named 'RPA'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -85,7 +88,7 @@ PYTHONPATH:
   c:\users\vavornic\appdata\local\programs\python\python38\lib
   c:\users\vavornic\appdata\local\programs\python\python38
   c:\users\vavornic\appdata\local\programs\python\python38\lib\site-packages</msg>
-<msg timestamp="20211221 14:11:38.865" level="ERROR">Error in file 'C:\Users\VAVORNIC\Desktop\Seat\SeatAutomation\tests\tasks.robot' on line 5: Importing library 'RPA.Desktop' failed: ModuleNotFoundError: No module named 'RPA'
+<msg timestamp="20211221 15:34:28.683" level="ERROR">Error in file 'C:\Users\VAVORNIC\Desktop\Seat\SeatAutomation\tests\tasks.robot' on line 5: Importing library 'RPA.Desktop' failed: ModuleNotFoundError: No module named 'RPA'
 Traceback (most recent call last):
   None
 PYTHONPATH:
