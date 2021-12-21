@@ -14,7 +14,13 @@ loginKW
   Input Password    xpath=//*[@id="password"]/input    ${PASSWORD}
   Click Button     xpath=//*[@id="kc-login"]
   Execute Manual Step      Please write the code.
-   Click Button     xpath=//*[@id="menu-button"]
+   Click Button     xpath=//*[@id="root"]/div[1]/div/div/div/div/div/button[1]
+
+ homePageView
+      Page Should Contain Element    text=Select a building
+
+
+
   
 
 *** Variables ***
@@ -26,3 +32,4 @@ ${PASSWORD}          Murtuz12
 *** Test Cases ***
 Google Search
   loginKW
+  #  homePageView
